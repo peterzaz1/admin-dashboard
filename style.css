@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  gap: 4px;
+}
+
+.header {
+  background-color: coral;
+  grid-column: 2 / 4;
+}
+
+.sidebar {
+  text-align: center;
+  background-color: blue;
+  grid-row: 1 / 4;
+}
+
+.main {
+  background-color: blueviolet;
+  grid-column: 2 / 3;
+  grid-row: 2/4;
+}
+
+.side-contant {
+  background-color: cadetblue;
+  grid-row: 2/4;
+}
