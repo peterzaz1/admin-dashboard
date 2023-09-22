@@ -121,7 +121,8 @@ a {
 }
 
 .divider {
-  margin: 80px 0;
+  margin: 20px 0;
+  border-bottom: 1px solid black;
 }
 
 .logo {
@@ -135,4 +136,65 @@ a {
   background-color: #e2e8f0;
   grid-column: 2 / 3;
   grid-row: 2/4;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.articles {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+article {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid yellow;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.main-right {
+  margin-left: 50px;
+}
+.main-right h2 {
+  margin: 22px 0;
+}
+
+.main-top-right,
+.main-bottom-right {
+  background-color: white;
+  width: 190px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.main-top-right {
+  margin-bottom: 20px;
+}
+
+.text-2 h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.text-2 p {
+  font-size: 12px;
+}
+
+article .share {
+  display: flex;
+  margin-top: 20px;
+  justify-content: end;
+  gap: 8px;
 }
